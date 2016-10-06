@@ -1,5 +1,6 @@
-%p Creep Score
+%p.home-title__header Creep Score
 
-%button Search
-%input
-
+%div.home-search__div
+  = form_tag search_path, :method => 'get' do
+    = text_field_tag :search, params[:search], class: "home-search__input"
+    = submit_tag "Search", :name => nil, class: "home-search__button"
