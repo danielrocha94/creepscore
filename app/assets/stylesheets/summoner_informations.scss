@@ -1,0 +1,46 @@
+.header {
+  width: 70%;
+  padding: 15px;
+}
+
+.summoner_name {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-top: 15px;
+  text-align: left;
+  padding: 3px 15px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.summoner-icon {
+  display: inline-block;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.summoner_information_body {
+  width: 40%;
+  border: 1px solid #000;
+  vertical-align: top;
+  height: 100%;
+}
+
+.rank_medal {
+  vertical-align: bottom;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.summoner_league {
+  display: inline-block;
+  width: auto;
+  font-size: 0.75em;
+}

@@ -1,0 +1,18 @@
+.header
+  .summoner-icon{ :style => "background-image: url(#{@summoner.get_summoner_icon});"}
+  .summoner_name
+    = @summoner.name
+.summoner_information_body
+  = @league_entry.get_summoner_medal
+  .summoner_league
+    .tier_rank
+      = @league_entry.tier.capitalize
+      = @league_entry.division
+    .win_lose
+      = "#{@league_entry.league_points} LP / "
+      = "#{@league_entry.wins}W #{@league_entry.losses}L"
+      .winratio
+        win percentage:
+        = "#{@league_entry.get_winrate}%"
+    .league_name
+      = "#{}"

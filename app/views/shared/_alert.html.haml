@@ -1,0 +1,6 @@
+.alert.alert-info
+- if flash[:alert].present?
+  :javascript
+    window.onload = function() {
+      $(document).on("page:load", App.alert_msg('#{j flash[:alert]}', true));
+    };
