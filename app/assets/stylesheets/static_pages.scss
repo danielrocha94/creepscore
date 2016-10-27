@@ -8,6 +8,26 @@
   padding-bottom: 2%;
 }
 
+.home-search-container{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.region {
+  width: 15%;
+  display: inline;
+  input {
+    display: none;
+  }
+  label {
+    border: 1px solid black;
+  }
+  label.active{
+      background-color:#081c511;
+  }
+}
+
 .home-search__div {
   width: 100%;
   position: relative;
@@ -15,14 +35,20 @@
 }
 
 .home-search__button {
-  width: 25%;
+  width: 15%;
   padding: 10px 0;
 }
 
 .home-search__input {
   margin: 0;
-  padding: 0;
   text-align:left;
-  width: 40%;
-  padding: 10px 0;
+  width: 70%;
+  padding: 6px 6px;
+	margin-bottom: 15px;
+}
+
+.region-buttons{
+  button {
+    
+  }
 }

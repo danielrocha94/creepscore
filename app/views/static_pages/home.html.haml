@@ -1,6 +1,41 @@
 %p.home-title__header Creep Score
 
-%div.home-search__div
+.home-search-container
   = form_tag search_path, :method => 'get' do
-    = text_field_tag :search, params[:search], class: "home-search__input"
-    = submit_tag "Search", :name => nil, class: "home-search__button"
+    = text_field_tag :search, params[:search], placeholder: "Search a player", class: "home-search__input"
+    = submit_tag "Search", :name => nil, class: "home-search__button btn btn-info"
+    .region-group
+      .na-group.region
+        = label_tag 'region_label_na', "NA", class: "region_label active btn btn-primary"
+        = radio_button_tag 'region', 'NA', true
+      .euw-group.region
+        = label_tag 'region_label_euw', "EUW", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'EUW'
+      .eune-group.region
+        = label_tag 'region_label_eune', "EUNE", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'EUNE'
+      .br-group.region
+        = label_tag 'region_label_br', "BR", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'BR'
+      .tr-group.region
+        = label_tag 'region_label_tr', "TR", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'TR'
+      .ru-group.region
+        = label_tag 'region_label_ru', "RU", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'RU'
+      .lan-group.region
+        = label_tag 'region_label_lan', "LAN", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'LAN'
+      .las-group.region
+        = label_tag 'region_label_las', "LAS", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'LAS'
+      .oce-group.region
+        = label_tag 'region_label_oce', "OCE", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'OCE'
+      .kr-group.region
+        = label_tag 'region_label_kr', "KR", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'KR'
+      .jp-group.region
+        = label_tag 'region_label_jp', "JP", class: "region_label btn btn-primary"
+        = radio_button_tag 'region', 'JP'
+
